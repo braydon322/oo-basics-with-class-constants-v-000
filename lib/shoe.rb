@@ -6,7 +6,7 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-
+    duplicate_test
   end
 
   def duplicate_test
