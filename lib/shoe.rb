@@ -12,7 +12,7 @@ class Shoe
   end
 
   def duplicate_test
-    Shoe::BRANDS.include?(brand)? : BRANDS << @brand
+    BRANDS << @brand if !Shoe::BRANDS.include?(brand)
   end
 
   def cobble
