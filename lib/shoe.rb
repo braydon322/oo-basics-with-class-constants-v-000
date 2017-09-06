@@ -10,13 +10,17 @@ class Shoe
   end
 
   def duplicate_test
-    i = 0
-    while i <= Shoe::BRANDS.size
-      if Shoe::BRANDS[i] != brand
-        BRANDS << @brand
+
+    if Shoe::BRANDS.size == 0
+      BRANDS << @brand
+    else
+      i = 0
+      while i <= Shoe::BRANDS.size
+        if Shoe::BRANDS[i] != brand
+          BRANDS << @brand
+        end
+        i+=1
       end
-      i+=1
-    end
   end
 
   def cobble
