@@ -13,7 +13,7 @@ class Shoe
     i = 0
     while i < Shoe::BRANDS.size
       if Shoe::BRANDS[i] != brand
-        BRANDS << @brand
+        BRANDS << brand
       end
       i+=1
     end
