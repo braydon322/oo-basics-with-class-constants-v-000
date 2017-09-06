@@ -12,18 +12,7 @@ class Shoe
   end
 
   def duplicate_test
-
-    if Shoe::BRANDS.size == 0
-      BRANDS << @brand
-    else
-      i = 0
-      while i < Shoe::BRANDS.size
-        if Shoe::BRANDS[i] != brand
-          BRANDS << @brand
-        end
-        i+=1
-      end
-    end
+    Shoe::BRANDS.include?(brand)? : BRANDS << @brand
   end
 
   def cobble
