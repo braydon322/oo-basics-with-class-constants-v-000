@@ -11,7 +11,7 @@ class Shoe
 
   def duplicate_test
     i = 0
-    while i = Shoe::BRANDS.size
+    while i <= Shoe::BRANDS.size
       if Shoe::BRANDS[i] != brand
         BRANDS << @brand
       end
