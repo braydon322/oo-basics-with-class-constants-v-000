@@ -17,6 +17,7 @@ class Shoe
       i = 0
       while i < Shoe::BRANDS.size
         if Shoe::BRANDS[i] != brand
+          binding.pry
           BRANDS << @brand
         end
         i+=1
